@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" th:with="locale='en'"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de IMC - Tu Control de Salud IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+        }
+        .top-bar {
+            width: 100%;
+            background: linear-gradient(135deg, #00acc1, #26a69a);
+            color: white;
+            padding: 25px 0 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 90vh;
+            margin-top: 30px;
+        }
+        .historial-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .historial-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #00bcd4;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-success {
+            background-color: #009688;
+        }
+        .btn-secondary {
+            background-color: #757575;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    Este es Tu Control de Salud
+    <span th:text="${nombrePaciente} ?: 'Sin nombre'"></span>
+</div>
+
+<div class="container">
+    <div class="historial-section">
+        <div class="historial-box">
+            <h2 style="text-align:center; color:#00695c;">Historial de IMC</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Peso (kg)</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="calculo : ${historial}">
+                        <td th:text="${#temporals.format(calculo.fecha, 'dd/MM/yyyy HH:mm')}"></td>
+                        <td th:text="${calculo.peso}"></td>
+                        <td th:text="${#numbers.formatDecimal(calculo.imc, 1, 2)}"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="/calcular" class="btn btn-success">Nuevo cálculo</a>
+                <a href="/logout" class="btn btn-secondary">Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

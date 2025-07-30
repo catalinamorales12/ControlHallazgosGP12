@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario - Tu Control de Salud IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .register-form {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .register-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        .register-box h2 {
+            text-align: center;
+            color: #00695c;
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-control, select.form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #00838f;
+        }
+        .extra-links {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .extra-links a {
+            color: #0097a7;
+            text-decoration: none;
+        }
+        .right-panel {
+            flex: 1;
+            background: linear-gradient(135deg, #00acc1, #26a69a);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .right-panel img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .right-panel h1 {
+            font-size: 38px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="register-form">
+        <div class="register-box">
+            <h2>Registro de Usuario</h2>
+            <form th:action="@{/registro}" th:object="${paciente}" method="post">
+                <div class="form-group">
+                    <label>Nombre completo</label>
+                    <input type="text" th:field="*{nombre}" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>Edad</label>
+                    <input type="number" th:field="*{edad}" min="15" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>Sexo</label>
+                    <select th:field="*{sexo}" class="form-control" required>
+                        <option value="">Selecciona</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Estatura (m)</label>
+                    <input type="number" th:field="*{estatura}" min="1" max="2.5" step="0.01" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>Nombre de usuario</label>
+                    <input type="text" th:field="*{nombreUsuario}" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input type="password" th:field="*{contrasena}" class="form-control" required />
+                </div>
+                <button type="submit" class="btn-primary">Registrarse</button>
+            </form>
+            <div class="extra-links">
+                <a href="/login">¿Ya tienes cuenta? Inicia sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-panel">
+        <img th:src="@{/assets/images/salud.jpg}" alt="Imagen de Salud" />
+        <h1>Regístrate en<br>Tu Control de Salud IMC</h1>
+    </div>
+</div>
+
+</body>
+</html>
