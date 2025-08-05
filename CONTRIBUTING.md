@@ -60,16 +60,28 @@ Sigue estos pasos para enviar tu contribución correctamente:
    cd nombre-del-repositorio
 
    - Crear una nueva rama:
+   
 git checkout -b feature/nombre-de-tu-rama
+
 - Realizar tus cambios y hacer commit:
+  
 git add .
+
 git commit -m "Descripción clara de los cambios"
+
 - Enviar tu rama al repositorio remoto:
+  
 git push origin feature/nombre-de-tu-rama
+
 - Crear un Pull Request:
+  
 - Ve a GitHub y abre un nuevo Pull Request desde tu rama.
+  
 - Asegúrate de describir qué problema resuelve y qué módulos afecta.
+  
 - Esperar revisión y aprobación:
+  
 - Tu Pull Request será revisado.
+  
 - Si todo está correcto, se hará el merge a la rama principal.
 
