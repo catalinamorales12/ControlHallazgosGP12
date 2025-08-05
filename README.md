@@ -30,5 +30,7 @@ La arquitectura del sistema se basa en una estructura modular y escalable:
 - Control de versiones: GitHub con ramas organizadas por funcionalidades y milestones
 - Seguridad: Implementación de protocolos básicos de autenticación y control de acceso
 
-
+##Documentación completa:
+- Guía de usuario: https://github.com/catalinamorales12/ControlHallazgosGP12/wiki/Gu%C3%ADa-de-Usuario
+- Manual de instalación: https://github.com/catalinamorales12/ControlHallazgosGP12/wiki/Manual-de-Instalaci%C3%B3n
 
