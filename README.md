@@ -57,6 +57,6 @@ REQUERIMIENTOS
 
 CONTRIBUCIÓN
 
-https://github.com/catalinamorales12/ControlHallazgosGP12/blob/main/CONTRIBUTING
+https://github.com/catalinamorales12/ControlHallazgosGP12/blob/main/CONTRIBUTING.md
 
 
