@@ -25,7 +25,7 @@ Arquitectura
 La arquitectura del sistema se basa en una estructura modular y escalable:
 - Frontend: Interfaz construida con [HTML/CSS]
 - Backend: Lógica de negocio y persistencia con [Java]
-- Base de datos: [MySQL, postgress] para almacenamiento de hallazgos
+- Base de datos: [postgresSQL] para almacenamiento de hallazgos
 - CI/CD: Pipeline configurado con GitHub Actions (o Travis CI/Drone) para pruebas JUnit y despliegue automatizado
 - Control de versiones: GitHub con ramas organizadas por funcionalidades y milestones
 - Seguridad: Implementación de protocolos básicos de autenticación y control de acceso
