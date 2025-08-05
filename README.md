@@ -54,3 +54,9 @@ REQUERIMIENTOS
 - PostgreSQL: 14 o superior
 - Visual Studio Code: Última versión estable
 - Navegador: Chrome, Firefox o Edge (actualizado)
+
+CONTRIBUCIÓN
+
+https://github.com/catalinamorales12/ControlHallazgosGP12/blob/main/CONTRIBUTING
+
+
