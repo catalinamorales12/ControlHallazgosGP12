@@ -49,10 +49,27 @@ Si encuentras un error:
 2. Describe el comportamiento esperado y el observado
 3. Incluye pasos para reproducirlo y capturas si es posible
 
-## Pull Requests
+## Proceso para contribuir
 
-Cuando envíes un Pull Request:
+Sigue estos pasos para enviar tu contribución correctamente:
 
-- Asegúrate de que esté vinculado a un issue (si aplica)
-- Explica brevemente qué problema resuelve
-- Indica si afecta otros módulos o requiere pruebas adicionales
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://github.com/usuario/nombre-del-repositorio.git
+   cd nombre-del-repositorio
+
+   - Crear una nueva rama:
+git checkout -b feature/nombre-de-tu-rama
+- Realizar tus cambios y hacer commit:
+git add .
+git commit -m "Descripción clara de los cambios"
+- Enviar tu rama al repositorio remoto:
+git push origin feature/nombre-de-tu-rama
+- Crear un Pull Request:
+- Ve a GitHub y abre un nuevo Pull Request desde tu rama.
+- Asegúrate de describir qué problema resuelve y qué módulos afecta.
+- Esperar revisión y aprobación:
+- Tu Pull Request será revisado.
+- Si todo está correcto, se hará el merge a la rama principal.
+
