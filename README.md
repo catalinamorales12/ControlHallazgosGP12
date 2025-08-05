@@ -1,6 +1,6 @@
 # ControlHallazgosGP12
 
-Descripción
+DESCRIPCIÓN
 
 Control de Hallazgos en GP12 es una aplicación desarrollada para Hutchinson con el objetivo de mejorar la trazabilidad, gestión y resolución de incidencias detectadas en procesos internos. La herramienta permite registrar hallazgos, clasificarlos, darles seguimiento y generar reportes históricos, todo dentro de una interfaz intuitiva y modular.
 Problema Identificado
@@ -34,3 +34,23 @@ La arquitectura del sistema se basa en una estructura modular y escalable:
 - Guía de usuario: https://github.com/catalinamorales12/ControlHallazgosGP12/wiki/Gu%C3%ADa-de-Usuario
 - Manual de instalación: https://github.com/catalinamorales12/ControlHallazgosGP12/wiki/Manual-de-Instalaci%C3%B3n
 
+REQUERIMIENTOS
+
+1. Servidores y servicios utilizados
+- Servidor de Aplicación: Apache Tomcat 9
+- Servidor Web: Integrado en Tomcat
+- Base de Datos: PostgreSQL (instancia en la nube)
+- IDE: Visual Studio Code
+- Sistema Operativo recomendado: Windows 11
+2. Paquetes y dependencias adicionales
+- Conector JDBC para PostgreSQL
+- Librerías de Java para manejo de formularios y sesiones
+- Estilos personalizados con CSS
+- HTML para estructura de vistas
+- Configuración de conexión a base de datos en archivo .properties o .xml
+3. Versiones recomendadas
+- Java: JDK 17
+- Tomcat: 9.0 o superior
+- PostgreSQL: 14 o superior
+- Visual Studio Code: Última versión estable
+- Navegador: Chrome, Firefox o Edge (actualizado)
