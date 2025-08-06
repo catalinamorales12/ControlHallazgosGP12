@@ -55,8 +55,108 @@ REQUERIMIENTOS
 - Visual Studio Code: Última versión estable
 - Navegador: Chrome, Firefox o Edge (actualizado)
 
+INSTALACIÓN
+
+Requisitos del entorno
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+- Java JDK 17
+- Apache Tomcat 9
+- PostgreSQL (se recomienda instancia en la nube, pero puede ser local)
+- Visual Studio Code con extensiones para Java y Markdown
+- Conexión estable a internet para acceder a la base de datos remota
+  
+Instalación del ambiente de desarrollo
+
+- Clona el repositorio:
+  
+git clone https://github.com/catalinamorales12/ControlHallazgosGP12.git
+cd ControlHallazgosGP12
+
+- Importa el proyecto en Visual Studio Code.
+- Configura Tomcat:
+- Asegúrate de que Tomcat esté instalado y configurado como servidor en VS Code.
+- Agrega el proyecto como aplicación web en Tomcat.
+
+Configura la conexión a PostgreSQL:
+- Edita el archivo db/Conexion.java con tus credenciales de acceso a la base de datos remota.
+
+Ejecución de pruebas manuales
+
+- Accede al módulo form/ y realiza pruebas de captura de datos.
+- Verifica el historial en history/ para confirmar persistencia.
+- Usa credenciales válidas en login/ para probar autenticación.
+- Navega por menu/ para validar la estructura de navegación.
+Implementación en producción
+
+Opción local
+- Ejecuta el proyecto en Tomcat desde VS Code.
+- Asegúrate de que la base de datos esté accesible desde tu entorno local.
+
+CONFIGURACIÓN
+
+Archivos de configuración
+- db/Conexion.java: contiene los parámetros de conexión a PostgreSQL.
+- web.xml: configuración de rutas y servlets en Tomcat.
+- login/config.properties: archivo opcional para credenciales o tokens.
+Requerimientos del sistema
+- Sistema operativo: Windows
+- Java JDK 17
+- Apache Tomcat 9
+- PostgreSQL 13+
+- Navegador web actualizado (Chrome, Firefox, Edge)
+
+USO
+
+Manual para usuario final
+
+Una vez desplegado el sistema, el usuario final puede:
+- Iniciar sesión en el módulo login/ con sus credenciales.
+- Navegar por el sistema usando el menú principal (menu/).
+- Capturar datos en formularios (form/) relacionados con hallazgos.
+- Consultar historial de acciones en el módulo history/.
+  
+Manual para usuario administrador
+
+El administrador puede:
+- Gestionar usuarios desde la base de datos PostgreSQL.
+- Auditar acciones mediante el historial (history/).
+- Validar integridad de datos y aplicar medidas de seguridad.
+- Actualizar configuración en archivos como Conexion.java o web.xml.
+
 CONTRIBUCIÓN
 
 https://github.com/catalinamorales12/ControlHallazgosGP12/blob/main/CONTRIBUTING.md
+
+
+##  Roadmap
+
+Estas son las funcionalidades y mejoras que se planean implementar en futuras versiones del sistema:
+
+### Seguridad y validación
+- Implementación de validaciones en formularios HTML.
+- Autenticación con tokens o sesiones seguras.
+- Registro de intentos fallidos de login.
+
+### Administración y monitoreo
+- Panel de control para usuarios administradores.
+- Estadísticas de uso y reportes de hallazgos.
+- Auditoría de acciones por usuario.
+
+###  Integración y despliegue
+- Configuración de CI/CD con GitHub Actions para pruebas automáticas.
+- Despliegue en Heroku o plataforma en la nube.
+- Exportación del proyecto como archivo WAR para producción.
+
+### Mejora de experiencia de usuario
+- Estilización avanzada con CSS responsivo.
+- Validación en tiempo real en formularios.
+- Navegación más intuitiva en el menú principal.
+
+### Documentación y soporte
+- Manual extendido para administradores.
+- Guía de solución de errores comunes.
+- Wiki con diagramas de arquitectura y flujo de datos.
+
+
 
 
