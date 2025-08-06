@@ -128,6 +128,8 @@ cd ControlHallazgosGP12
 - Configura la conexión a PostgreSQL:
 - Edita el archivo db/Conexion.java con tus credenciales de acceso a la base de datos remota.
 
+---
+
 ### Ejecución de pruebas manuales
 
 - Accede al módulo form/ y realiza pruebas de captura de datos.
@@ -135,6 +137,8 @@ cd ControlHallazgosGP12
 - Usa credenciales válidas en login/ para probar autenticación.
 - Navega por menu/ para validar la estructura de navegación.
 Implementación en producción
+
+---
 
 ### Opción local
 - Ejecuta el proyecto en Tomcat desde VS Code.
