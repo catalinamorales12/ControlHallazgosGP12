@@ -1,8 +1,6 @@
 # ControlHallazgosGP12
 
-# ControlHallazgosGP12
-
-## Tabla de Contenidos
+##  Tabla de Contenidos
 
 - [Descripción](#descripción)
 - [Problema Identificado](#problema-identificado)
@@ -11,8 +9,16 @@
 - [Documentación completa](#documentación-completa)
 - [Requerimientos](#requerimientos)
 - [Instalación](#instalación)
+  - [Instalación del ambiente de desarrollo](#instalación-del-ambiente-de-desarrollo)
+  - [Configuración de conexión a PostgreSQL](#configura-la-conexión-a-postgresql)
+  - [Ejecución de pruebas manuales](#ejecución-de-pruebas-manuales)
+  - [Implementación en producción](#implementación-en-producción)
 - [Configuración](#configuración)
+  - [Archivos de configuración](#archivos-de-configuración)
+  - [Requerimientos del sistema](#requerimientos-del-sistema)
 - [Uso](#uso)
+  - [Manual para usuario final](#manual-para-usuario-final)
+  - [Manual para usuario administrador](#manual-para-usuario-administrador)
 - [Contribución](#contribución)
 - [Roadmap](#roadmap)
 
