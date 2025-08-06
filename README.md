@@ -116,7 +116,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 ### Instalación del ambiente de desarrollo
 
-```bash
+bash
 git clone https://github.com/catalinamorales12/ControlHallazgosGP12.git
 cd ControlHallazgosGP12
 
@@ -138,11 +138,11 @@ cd ControlHallazgosGP12
 - Navega por menu/ para validar la estructura de navegación.
 Implementación en producción
 
----
-
 ### Opción local
 - Ejecuta el proyecto en Tomcat desde VS Code.
 - Asegúrate de que la base de datos esté accesible desde tu entorno local.
+
+---
 
 ## Configuración
 
@@ -156,6 +156,8 @@ Implementación en producción
 - Apache Tomcat 9
 - PostgreSQL 13+
 - Navegador web actualizado (Chrome, Firefox, Edge)
+
+---
 
 ## Uso
 
@@ -175,10 +177,13 @@ El administrador puede:
 - Validar integridad de datos y aplicar medidas de seguridad.
 - Actualizar configuración en archivos como Conexion.java o web.xml.
 
+--- 
+
 ## Contribución
 
 https://github.com/catalinamorales12/ControlHallazgosGP12/blob/main/CONTRIBUTING.md
 
+--- 
 
 ##  Roadmap
 
