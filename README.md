@@ -116,7 +116,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 ### Instalación del ambiente de desarrollo
 
-bash
+```bash ```
 git clone https://github.com/catalinamorales12/ControlHallazgosGP12.git
 cd ControlHallazgosGP12
 
