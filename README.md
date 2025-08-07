@@ -214,6 +214,23 @@ Estas son las funcionalidades y mejoras que se planean implementar en futuras ve
 - Guía de solución de errores comunes.
 - Wiki con diagramas de arquitectura y flujo de datos.
 
+| Actividad                                                                 | F1 | F2 | F3 | F4 | F5 |
+|---------------------------------------------------------------------------|----|----|----|----|----|
+| Implementación de validaciones en formularios HTML                        | ✅ |    |    |    |    |
+| Autenticación con tokens o sesiones seguras                               | ✅ |    |    |    |    |
+| Registro de intentos fallidos de login                                    | ✅ |    |    |    |    |
+| Panel de control para usuarios administradores                            |    | ✅ |    |    |    |
+| Estadísticas de uso y reportes de hallazgos                               |    | ✅ |    |    |    |
+| Auditoría de acciones por usuario                                         |    | ✅ |    |    |    |
+| Configuración de CI/CD con GitHub Actions para pruebas automáticas        |    |    | ✅ |    |    |
+| Despliegue en Heroku o plataforma en la nube                              |    |    | ✅ |    |    |
+| Exportación del proyecto como archivo WAR para producción                 |    |    | ✅ |    |    |
+| Estilización avanzada con CSS responsivo                                  |    |    |    | ✅ |    |
+| Validación en tiempo real en formularios                                  |    |    |    | ✅ |    |
+| Navegación más intuitiva en el menú principal                             |    |    |    | ✅ |    |
+| Manual extendido para administradores                                     |    |    |    |    | ✅ |
+| Guía de solución de errores comunes                                       |    |    |    |    | ✅ |
+| Wiki con diagramas de arquitectura y flujo de datos                       |    |    |    |    | ✅ |
 
 
 
